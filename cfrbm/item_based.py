@@ -47,7 +47,7 @@ def run(name, dataset, config, all_users, all_movies, tests, initial_v, sep):
     for j in range(epochs):
         def get_index(col):
             if j/(epochs/len(col)) < len(col):
-                return j/(epochs/len(col))
+                return round(j/(epochs/len(col)))
             else:
                 return -1
 
@@ -169,7 +169,7 @@ def run(name, dataset, config, all_users, all_movies, tests, initial_v, sep):
 
 if __name__ == "__main__":
 
-    experiment = read_experiment(sys.argv[1])
+    experiment = read_experiment(sys.argv[1])[0]
 
     name = experiment['name']
     train_path = experiment['train_path']
