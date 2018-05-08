@@ -8,15 +8,15 @@
         "configs": [
             {
                 "name": "initial_experiment",
-                "epochs": 100,
+                "epochs": 50,
                 "batch_size": 10,
-                "number_hidden": 100,
+                "number_hidden": 200,
                 "ks": [1],
                 "momentums": [0.5, 0.6],
-                "l_w": [0.0005],
-                "l_v": [0.0005],
-                "l_h": [0.0005],
-                "decay": 0.0002
+                "l_w": [0.001],
+                "l_v": [0.001],
+                "l_h": [0.001],
+                "decay": 0.001
             }
         ]
     }]
