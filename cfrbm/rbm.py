@@ -28,6 +28,7 @@ class CFRBM:
             initial_hbias = np.load('{}.h.npy'.format(initial_weigths))
             initial_vbias = np.load('{}.b.npy'.format(initial_weigths))
         else:
+            print(self.dim)
             initial_weights = np.array(np.random.normal(0, 0.1, size=self.dim),
                                        dtype=np.float32)
             initial_hbias = np.zeros(num_hidden, dtype=np.float32)

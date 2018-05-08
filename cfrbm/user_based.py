@@ -31,6 +31,8 @@ def run(name, dataset, config, all_users, all_movies, tests, initial_v, sep):
     vis = T.matrix()
     vmasks = T.matrix()
 
+    print(len(all_movies))
+
     rbm = CFRBM(len(all_movies) * 5, number_hidden)
 
     profiles = defaultdict(list)

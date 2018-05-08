@@ -23,6 +23,8 @@ def load_dataset(train_path, test_path, sep, user_based=True):
             else:
                 tests[mid].append((uid, float(rat)))
 
+
+    print(len(all_users_set), len(all_movies_set))
     return list(all_users_set), list(all_movies_set), tests
 
 

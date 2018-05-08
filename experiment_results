@@ -1,0 +1,2 @@
+lrate   number_hidden   decay   batch_size  epochs  best_result
+0.0005  200             0.0001  1           100     1
